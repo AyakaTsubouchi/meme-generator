@@ -16,6 +16,9 @@ h1 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 300px;
+  white-space: nowrap;
+  overflow: visible;
 }
 
 .meme .bottomText {
