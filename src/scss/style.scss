@@ -1,0 +1,16 @@
+@import './Font.scss';
+@import './MemeGenerator.scss';
+h1 {
+  font-family: $title-font;
+  color: yellow;
+  text-shadow: 2px 2px gray;
+  text-align: center;
+}
+.container {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 153, 255),
+    rgb(8, 86, 138),
+    rgb(0, 153, 255)
+  );
+}

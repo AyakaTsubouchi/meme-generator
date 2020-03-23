@@ -1,0 +1,20 @@
+.meme {
+  position: relative;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px rgb(37, 37, 37);
+
+  /* Centered text */
+  .topText {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .bottomText {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

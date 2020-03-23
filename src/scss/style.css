@@ -1,0 +1,40 @@
+h1 {
+  font-family: "Titan One", cursive;
+}
+
+.meme {
+  position: relative;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px #252525;
+  /* Centered text */
+}
+
+.meme .topText {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.meme .bottomText {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: "Titan One", cursive;
+  color: yellow;
+  text-shadow: 2px 2px gray;
+  text-align: center;
+}
+
+.container {
+  background-image: -webkit-gradient(linear, left top, right top, from(#0099ff), color-stop(#08568a), to(#0099ff));
+  background-image: linear-gradient(to right, #0099ff, #08568a, #0099ff);
+}
+/*# sourceMappingURL=style.css.map */
