@@ -32,7 +32,6 @@ export default class MemeGenerator extends Component {
     this.setState({
       img: this.state.data.memes[Math.floor(Math.random() * 100)].url
     });
-    console.log(this.state.data);
   }
   topOnChange = e => {
     this.setState({
@@ -51,44 +50,55 @@ export default class MemeGenerator extends Component {
       fontSize: e.target.value
     });
   };
-  //   fontSize = {
-  //     'font-size': `${this.state.fontSize}`
-  //   };
+
   render() {
     return (
-      <div>
-        <form>
+      <div className="memeGenerator row">
+        <form className="col-sm">
           <input
+            className="input-group-text"
             type="text"
             name="topText"
             placeholder="Top Text"
             value={this.state.topText}
             onChange={this.topOnChange}
-          />{' '}
-          <br />
+          />
           <input
+            className="input-group-text"
             type="text"
             name="bottomText"
             placeholder="Bottom Text"
             value={this.state.bottomText}
             onChange={this.bottomOnChange}
           />
-          <br />
           <input
+            className="input-group-text"
             type="numer"
             name="fontSizse"
             placeholder="Font Size"
             value={this.state.fontSize}
             onChange={this.bottomOnChange}
           />
-          <br />
-          <button onClick={this.getMeme}>CREATE</button>
+          <button
+            className="btn btn-light"
+            onClick={e => {
+              e.preventDefault();
+              this.getMeme();
+            }}>
+            New Image
+          </button>
+          <button className="btn btn-light">Save</button>
         </form>
 
-        <div className="meme">
+        <div className="meme col-sm">
           <h2 className="topText">{this.state.topText}</h2>
           <h2 className="bottomText">{this.state.bottomText}</h2>
-          <img src={this.state.img} alt="funny" style={{ width: '300px' }} />
+          <img
+            id="memeImg"
+            src={this.state.img}
+            alt="funny"
+            style={{ width: '300px' }}
+          />
         </div>
       </div>
     );
